@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slider-container {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.slider-container > img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 250ms ease-in-out;
+}
+
+.buttons {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+button:hover {
+  cursor: pointer;
+}
